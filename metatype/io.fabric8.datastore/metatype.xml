@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/io.fabric8.git.internal.GitDataStoreImpl">
+    <OCD id="io.fabric8.datastore" name="%io.fabric8.datastore.name" description="%io.fabric8.datastore.description">
+        <AD id="gitRemoteUrl" type="String" name="%io.fabric8.datastore.gitRemoteUrl.name" description="%io.fabric8.datastore.gitRemoteUrl.description"/>
+        <AD id="gitTimeout" type="String" name="%io.fabric8.datastore.gitTimeout.name" description="%io.fabric8.datastore.gitTimeout.description"/>
+        <AD id="importDir" type="String" default="fabric" name="%io.fabric8.datastore.importDir.name" description="%io.fabric8.datastore.importDir.description"/>
+        <AD id="gitRemotePollInterval" type="String" name="%io.fabric8.datastore.gitRemotePollInterval.name" description="%io.fabric8.datastore.gitRemotePollInterval.description"/>
+        <AD id="gitGcOnLoad" type="Boolean" default="false" name="%io.fabric8.datastore.gitGcOnLoad.name" description="%io.fabric8.datastore.gitGcOnLoad.description"/>
+        <AD id="gitAllowRemoteUpdate" type="Boolean" default="true" name="%io.fabric8.datastore.gitAllowRemoteUpdate.name" description="%io.fabric8.datastore.gitAllowRemoteUpdate.description"/>
+        <AD id="gitRandomFetchDelay" type="Integer" default="0" name="%io.fabric8.datastore.gitRandomFetchDelay.name" description="%io.fabric8.datastore.gitRandomFetchDelay.description"/>
+        <AD id="gitLockTimeout" type="Long" default="25000" name="%io.fabric8.datastore.gitLockTimeout.name" description="%io.fabric8.datastore.gitLockTimeout.description"/>
+    </OCD>
+    <Designate pid="io.fabric8.datastore">
+        <Object ocdref="io.fabric8.datastore"/>
+    </Designate>
+</metatype:MetaData>
